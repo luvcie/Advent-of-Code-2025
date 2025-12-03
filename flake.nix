@@ -21,6 +21,8 @@
           ];
 
           shellHook = ''
+		    export SHELL=/run/current-system/sw/bin/zsh
+            exec /run/current-system/sw/bin/zsh
             echo "Gleam Dev Shell"
             echo "Gleam version: $(gleam --version)"
             echo "Erlang version: $(erl -noshell -eval 'io:format("~s~n", [erlang:system_info(otp_release)]), halt().')"

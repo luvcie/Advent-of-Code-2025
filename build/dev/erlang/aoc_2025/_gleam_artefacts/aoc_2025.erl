@@ -6,4 +6,4 @@
 -file("src/aoc_2025.gleam", 3).
 -spec main() -> nil.
 main() ->
-    gleam_stdlib:println(<<"Hello World"/utf8>>).
+    playground@helloworld:print_hello().

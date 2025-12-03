@@ -1,5 +1,5 @@
-import gleam/io
+import playground/helloworld
 
-pub fn main () {
-  io.println("Hello World")
+pub fn main() {
+  helloworld.print_hello()
 }
